@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CQRS-Playground.Test\**" />
+    <Content Remove="CQRS-Playground.Test\**" />
+    <EmbeddedResource Remove="CQRS-Playground.Test\**" />
+    <None Remove="CQRS-Playground.Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MediatR" Version="8.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
   </ItemGroup>
